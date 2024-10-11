@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Coursework</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="./assets/images/up.png">
+    <link rel="stylesheet" href="./style.css">
+
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "./extra-libraries/Common/build/three.module.js"
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+    <canvas id="gl-canvas"></canvas>
+    <script type="module" charset="UTF-8" src="index.js"></script>
+
+    <div id="blurred">
+        <div id="grayed">
+            <div class="instructions">
+                <h2>Controls</h2>
+            </div>
+            <img src="./assets/images/Controls.png" alt="Game Controls Reference">
+            <div class="instructions">
+                <h2>Objective</h2>
+                <h5>Climb as high as possible without descending below the starting platform.</h5>
+                <h2>Play:</h2>
+            </div>
+            <div class="buttons">
+                <button type="button" id="levelOneButton">Level 1</button>
+                <button type="button" id="levelTwoButton">Level 2</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="stats">
+        <h3 id="height"></h3>
+    </div>
+</body>
+
+</html>
